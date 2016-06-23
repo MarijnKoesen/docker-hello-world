@@ -1,2 +1,4 @@
 <?php
-echo "Hello PHP " . PHP_VERSION;
+include('config.php');
+
+echo "Hello PHP " . PHP_VERSION . ' on env: '. $config['env'];
