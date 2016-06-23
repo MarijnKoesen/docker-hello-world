@@ -7,7 +7,7 @@ while ! TEST_OUTPUT=`curl -s --fail http://localhost`;
 done
 
 ## Assert server response
-if [ "$TEST_OUTPUT" != "Hello!" ]
+if [[ "$TEST_OUTPUT" != *"Hello"* ]]
 then
-    echo "Failed asserting that '${TEST_OUTPUT}' equals 'Hello!'" && exit 1;
+    echo "Failed asserting that '${TEST_OUTPUT}' contains 'Hello'" && exit 1;
 fi
