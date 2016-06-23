@@ -6,7 +6,7 @@
 SHELL=/bin/bash
 
 CONTAINER_TAG=marijnkoesen/docker-hello-world:latest
-CONTAINER_NAME=marijnkoesen/docker-hello-world
+CONTAINER_NAME=marijnkoesen-docker-hello-world
 
 all: build_container_image
 
